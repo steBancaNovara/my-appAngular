@@ -20,6 +20,21 @@ body
     text-align:center;
 }
 
+.example2{
+    margin-left:20%;
+    margin-top:2%;
+    width:600px;
+    text-align:center;
+}
+.example3{
+    margin-left:20%;
+    margin-top:47%;
+    width:600px;
+    text-align:center;
+}
+
+
+
 .chipExample{
     margin-left:-87%;
     

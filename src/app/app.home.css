@@ -1,0 +1,39 @@
+h1{
+    color:#369;
+    font-family:"Brush Script std";
+    font-size:50px;
+}
+
+body
+{
+  line-height: 150%;
+}
+.example-card{
+    width:200px;
+    margin-left:77%;
+    margin-top:-100%
+}
+.example1{
+    margin-left:20%;
+    margin-top:6%;
+    width:600px;
+    text-align:center;
+}
+
+.chipExample{
+    margin-left:-87%;
+    
+}
+
+.example-header-image{
+      background-image: url('http://www.hounlibrointesta.it/wp-content/uploads/2012/05/Rebecca-Dautremer.jpg');
+}
+
+.testo{
+    line-height: 22px;
+    font-family: 'Prestige Elite Std',serif;
+    text-align: justify;
+    font-size:14px;
+}
+
+

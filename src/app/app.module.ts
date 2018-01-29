@@ -38,6 +38,7 @@ import{  MatButtonModule,
 import { AppComponent } from './app.component';
 import { HomeComponent} from './app.home';
 import { AppMenu } from './app.menu';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -76,7 +77,8 @@ import { AppMenu } from './app.menu';
     MatInputModule,
     MatListModule,
     MatToolbarModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    AppRoutingModule
     ],
        exports: [
     MatButtonModule,

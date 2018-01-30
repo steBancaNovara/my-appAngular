@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {FormControl} from '@angular/forms';
-import {MatSnackBar} from '@angular/material';
+import {MatSnackBar,  MatSidenavModule} from '@angular/material';
 @Component({
   selector:'menu-root',
   templateUrl:'./app.menu.html',
@@ -8,7 +8,7 @@ import {MatSnackBar} from '@angular/material';
 })
 export class AppMenu{
   
-fillerNav=["Storia","Contatti","Home","Collabora","Corsi"];
+fillerNav=["Storia","Contatti","Home","About","Collabora","Corsi"];
 constructor(public corso: MatSnackBar){}
 
 

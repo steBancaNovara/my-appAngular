@@ -32,26 +32,20 @@ import{  MatButtonModule,
   MatGridListModule,
   MatInputModule,
   MatListModule,
-  
-  
 } from '@angular/material';
+
 import { AppComponent } from './app.component';
 import { HomeComponent} from './app.home';
-import { AppMenu } from './app.menu';
 import { RouterModule, Routes} from '@angular/router';
 import { AboutComponent } from './app.about';
-const appRoutes: Routes=[
-  {path:'Home', component: HomeComponent},
-  {path:'About', component: AboutComponent}
-]
+import { AppRoutingModule }  from './app.routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AppMenu,
     AboutComponent
-
-  ],
+   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -81,10 +75,9 @@ const appRoutes: Routes=[
     MatInputModule,
     MatListModule,
     MatToolbarModule,
-    MatSnackBarModule,
-     RouterModule.forRoot(appRoutes, { enableTracing:true})
-    ],
-       exports: [
+    MatSnackBarModule ,
+    AppRoutingModule   ],
+    exports: [
     MatButtonModule,
     MatMenuModule,
     MatToolbarModule,
@@ -109,11 +102,10 @@ const appRoutes: Routes=[
     MatListModule,
     MatToolbarModule,
     MatSnackBarModule,
-       
-
+    
     ],
 
   providers: [],
-  bootstrap: [AppComponent,HomeComponent,AppMenu]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,8 +3,29 @@
  <h1>
    {{ title }}&nbsp;<img style="width:80px; border-radius:999em;" src="http://www.radicelabirinto.it/wp-content/uploads/2014/06/Inna-Kapustenko.jpg">
   </h1>
-<menu-root></menu-root>
-<home-app></home-app>
-<app-about></app-about>
+  <mat-toolbar class="toolbarpos" color="primary">
+  Lista
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+       <mat-nav-list role="navigation">
+        <a mat-list-item routerLink="/home" routerLinkActive="active-link" (click)="hide">Home</a>
+        <a mat-list-item routerLink="/about" routerLinkActive="active-link">About</a>
+      </mat-nav-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button mat-button (click)="drawer.toggle()">
+     Menu
+    </button>
+  </div>
+</mat-drawer-container>
+
+
+<div>
 <router-outlet></router-outlet>
 </div>
+</div>
+
+

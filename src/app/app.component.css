@@ -1,6 +1,33 @@
+
+
 h1{
     margin-top:70px;
     color:#367;
     font-family:"Brush Script std";
     font-size:90px;
+}
+
+.example-container {
+  position:absolute;
+  margin-top:67px;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:200px;
+  height:7000px; 
+}
+
+.toolbarpos{
+  position:absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+mat-drawer-container{
+color:#7FC2BC
+}
+p{
+  line-height: 3%;
 }
